@@ -40,18 +40,18 @@ Example: See *strategic_scripts/setups* directory.
 Arguments:
 	setup: The location of an experiment setup json file.
 	policy: A bandit algorithm to use.
-	L: A hyperparameter to control the number of subsampled arms (Only used by RH-UCB, S-UCB)
+	L: A hyperparameter to control the number of subsampled arms (Only used by RH-UCB, S-UCB).
 
 Example: See shell scripts like *run_h_ucb.sh*.
 
 
 ### How to Experiment with Other Algorithms
 
-1. Make a python file for a new policy
+1. Make a python file for a new policy.
 
-If you want to use algorithms other than those used in our paper, you can do that by putting your own algorithm into *SMPyBandits/Policies/* directory. Also you can use other popular bandit algorithms like KL-UCB or Thompson Sampling thanks to the [base repository](https://github.com/SMPyBandits/SMPyBandits)
+If you want to use algorithms other than those used in our paper, you can do that by putting your own algorithm into *SMPyBandits/Policies/* directory. Also you can use other popular bandit algorithms like KL-UCB or Thompson Sampling thanks to the [base repository](https://github.com/SMPyBandits/SMPyBandits).
 
-2. Change some parts of code in *strategic_scripts* directory
+2. Change some parts of code in *strategic_scripts* directory.
 
 Add your policy into `AVALIABLE_POLICY` in *strategic_scripts/main.py* and add your case into `make_env_dict` function in *strategic/help_experiment.py*.
 
