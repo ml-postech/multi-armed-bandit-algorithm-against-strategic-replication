@@ -9,7 +9,7 @@ We consider a multi-armed bandit problem in which a set of arms is registered by
 
 ## Code
 
-We implemented Hierarchical UCB and Robust Hierarchical UCB algorithms based on https://github.com/SMPyBandits/SMPyBandits. The implemented algorithms are in *SMPyBandits/Policies/H_UCB.py* and *SMPyBandits/Policies/RH_UCB.py*. And codes for running experiments are in *strategic_scripts/* directory.
+We implemented Hierarchical UCB and Robust Hierarchical UCB algorithms based on [SMPyBandits](https://github.com/SMPyBandits/SMPyBandits). The implemented algorithms are in *SMPyBandits/Policies/H_UCB.py* and *SMPyBandits/Policies/RH_UCB.py*. And codes for running experiments are in *strategic_scripts/* directory.
 
 
 ### How to Run Experiments
@@ -21,26 +21,28 @@ We implemented Hierarchical UCB and Robust Hierarchical UCB algorithms based on 
 
 ### Description of Experiment Json File
 
-Keys:
-	horizon: The horizon of an experiment.
-	repetitions: The number of repetitions of an experiment.
-	n_jobs: The number of jobs for parallelization to accelerate an experiment.
-	verbosity: A flag to verbose logging.
-	arm_type: The type of arms used in an experiment.
-	agent_arm_dict: A dictionary indicating which agent has which arms and how many.
-	save_json: A flag to save an experiment result into a json file.
-	save_h5py: A flag to save an experiment result into a h5py file.
-	save_pickle: A flag to save an experiment result into a pickle file.
+```
+horizon: The horizon of an experiment.
+repetitions: The number of repetitions of an experiment.
+n_jobs: The number of jobs for parallelization to accelerate an experiment.
+verbosity: A flag to verbose logging.
+arm_type: The type of arms used in an experiment.
+agent_arm_dict: A dictionary indicating which agent has which arms and how many.
+save_json: A flag to save an experiment result into a json file.
+save_h5py: A flag to save an experiment result into a h5py file.
+save_pickle: A flag to save an experiment result into a pickle file.
+```
 
 Example: See *strategic_scripts/setups* directory.
 
 
 ### Argument Description of Running Scripts
 
-Arguments:
-	setup: The location of an experiment setup json file.
-	policy: A bandit algorithm to use.
-	L: A hyperparameter to control the number of subsampled arms (Only used by RH-UCB, S-UCB).
+```
+setup: The location of an experiment setup json file.
+policy: A bandit algorithm to use.
+L: A hyperparameter to control the number of subsampled arms (Only used by RH-UCB, S-UCB).
+```
 
 Example: See shell scripts like *run_h_ucb.sh*.
 
