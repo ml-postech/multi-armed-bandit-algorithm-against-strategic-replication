@@ -62,11 +62,12 @@ Add your policy into `AVALIABLE_POLICY` in *strategic_scripts/main.py* and add y
 
 Please cite our paper if you use our algorithms or this code in your work:
 ```
-@inproceedings{suho2022band,
+@inproceedings{shin2022multi,
   title={Multi-armed Bandit Algorithm against Strategic Replication},
-  author={Suho Shin and Seungjoon Lee and Jungseul Ok},
-  booktitle=AISTATS,
+  author={Shin, Suho and Lee, Seungjoon and Ok, Jungseul},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={403–431},
   year={2022},
-  url={https://arxiv.org/abs/2110.12160}
+  organization={PMLR}
 }
 ```
